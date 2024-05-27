@@ -1,0 +1,44 @@
+.container h2 {
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(53, 52, 52);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid lightgray;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 5px rgb(230, 230, 230);
+  font-weight: lighter;
+  margin-bottom: 25px;
+}
+
+.card p {
+  color: gray;
+}
+
+.card img {
+  height: 125px;
+  border-radius: 50%;
+  transition: transform .2s; /* Animation */
+}
+
+.card img:hover {
+  transform: scale(1.2);
+  box-shadow: 1px 1px 1px 3px rgb(230, 230, 230);
+}
+
+@media (max-width: 500px){
+  .cards {
+    justify-content: space-around;
+  }
+}
